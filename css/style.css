@@ -399,6 +399,12 @@
 .plan-sign-up {
   text-align: center;
   margin-top: 4.8rem;
+  text-align: center;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .feature-icon {
