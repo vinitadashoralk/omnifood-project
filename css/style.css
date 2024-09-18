@@ -407,6 +407,10 @@
   text-align: center;
 }
 
+/* ************************* */
+/* Featured Section */
+/* ************************* */
+
 .feature-icon {
   color: #e67e22;
   height: 3.2rem;
@@ -425,4 +429,38 @@
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/* ************************* */
+/* Call To Action Section */
+/* ************************* */
+
+.section-cta {
+  padding: 9.6rem 0;
+  /* background-color: #fdf2e9; */
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right, #eb984e, #e67e22);
+  /* temprary */
+  height: 50rem;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.cta-text-box {
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right,
+      hsla(28, 80%, 61%, 0.35),
+      hsla(28, 80%, 52%, 0.35)
+    ),
+    url("../content/img/eating.jpg");
+  /* background-image: url("../content/img/eating.jpg"); */
+  background-size: cover;
+  background-position: center;
 }
