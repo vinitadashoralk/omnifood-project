@@ -50,6 +50,21 @@
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  cursor: pointer;
+  background: none;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="close"] {
+  display: none;
+}
 /* ************************* */
 /* HERO SECTION */
 /* ************************* */
@@ -99,7 +114,8 @@
 }
 .delivered-imgs {
   display: flex;
-  position: relative;
+  /* position: relative; */
+  /* position: absolute; */
 }
 .delivered-imgs img {
   height: 4.8rem;
@@ -330,6 +346,7 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   gap: 1.6rem;
   padding: 1.6rem;
 }
