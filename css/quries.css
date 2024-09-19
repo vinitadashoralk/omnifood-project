@@ -123,7 +123,12 @@ em = current font size
     /* Hide the navigation */
     /* display: none; */
     /* allowed no transitions at all */
+    /* 1) hide its visibility */
     opacity: 0;
+    /* 2) Make it un accessible to mouse and keyboard */
+    pointer-events: none;
+    /* hide it from screen readers */
+    visibility: hidden;
   }
   .main-nav-list {
     flex-direction: column;
@@ -135,6 +140,14 @@ em = current font size
   }
   .nav-open .main-nav {
     opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu"] {
+    display: none;
   }
 }
 
