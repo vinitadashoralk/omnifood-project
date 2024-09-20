@@ -36,9 +36,15 @@ allLinks.forEach(function (link) {
         top: 0,
         behavior: "smooth",
       });
+
+    //scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+    //close mobile navigation
+    if (link.classList.contains("main-nav-link")) {
+      headerE1.classList.toggle("nav-open");
     }
   });
 });
