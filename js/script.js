@@ -8,12 +8,19 @@
 //   h1.style.backgroundColor = "red";
 //   h1.style.padding = "5rem";
 // });
-
+//set current year in footer
 const yearE1 = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 
 yearE1.textContent = currentYear;
 
+//Make mobile navigation work
+
+const btnNavE1 = document.querySelector(".btn-mobile-nav");
+const headerE1 = document.querySelector(".header");
+btnNavE1.addEventListener("click", function () {
+  headerE1.classList.toggle("nav-open");
+});
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
